@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: ponts;
+    src: url(./fonts/PoetsenOne-Regular.ttf);
+}
+:root{
+    --roxo-opaco: #422680;
+    --roxo-forte: #341671;
+    --roxo-escuro:#280659;
+    --roxo: #660F56;
+    --rosa:#AE2D68;
+    --salmao:#F54952;
+    --cinza:#242424;
+    --roxo-escuro-alter:#131129;
+}
+html{
+    font-size: 62.5%;
+}
+a{
+    text-decoration: none;
+    text-transform: none;
+    color: inherit;
+}
+#bg{
+    position: fixed; 
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    filter: brightness(0.7);
+    top: 0;
+}
+
+
+main section {
+    display: grid;
+    margin: 20rem 20rem;
+}
+section .title h1{
+    color: var(--rosa);
+    font-size: 10em;
+    font-family: ponts, serif;
+    font-weight: lighter;
+    text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.7);
+}
+section .subtitle span{
+font-size: 6em;
+font-family: ponts,serif;
+font-weight: lighter;
+color: white;
+}
+main section .search{
+    margin: 5vh 0 ;
+}
+main section #search-bar{
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    font-size: 3em;
+    width: 20em;
+    height: 2em; 
+    padding: 0 5.5rem;
+}
+main section #search-icon{
+    position: absolute;
+    margin: 1em -58.8rem;
+    height: 40px;
+    width: 40px;
+}
+main section .options{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    margin: 0;
+    padding: 0; 
+    
+}
+main section .options nav{
+    width: auto;
+}
+main section .options button{
+    background: var(--roxo-opaco);
+    display: inline-flex;
+    margin: 4.5rem;
+    width: 25rem;
+    height: 10rem;
+    border-radius: 15px;
+    border: none;    
+    justify-content: center;
+    align-items: center;
+}
+
+main section .options button p{
+    font-size: 35px;
+    color: #ffffff;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 574px){
+    
+}

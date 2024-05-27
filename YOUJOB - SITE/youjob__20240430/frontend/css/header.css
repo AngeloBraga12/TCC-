@@ -1,0 +1,32 @@
+html{
+    font-size: 62,5%;
+}
+
+header{
+    display: flex;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.35) 100%);
+    backdrop-filter: blur(3px);
+    filter: drop-shadow(5px 5px 5px #242424);
+    height: 10rem;
+    justify-content: end;
+}
+header nav{
+    display: flex;
+    align-items: center;
+}
+header nav .login{
+    padding: 0 5rem;
+}
+header nav .login a{
+    font-size: 20px;
+    padding: 0 2rem;
+}
+header nav .icons{
+    display: inline-flex;
+
+}
+header nav figure img{
+    height: 30px;
+    width: 30px;
+    margin: 0 2rem;
+}

@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+:not(h1, h2){
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #242424;
+  overflow-x: hidden;
+  margin-left: 80px;
+  margin-top: 120px;
+}
+
+h1, h2{
+  font-family: "PoetsenOne-Regular", sans-serif;
+}
+
+h3{
+  color: #fff;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input{
+  border: none;
+  outline: none;
+}
+
+body.body-centralizada{
+  display: flex;
+  justify-content: center;
+  max-width: 2000px;
+  margin-bottom: 80px;
+}
+
+#Cadastro label{
+  font-size: 16px;
+}
+
+#Cadastro input:not(#search){
+  border-radius: 8px;
+  width: 90%;
+  font-size: 15px;
+}
+
+main#Cadastro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(autofill, auto);
+  gap: 10px;
+  width: 80%;
+}
+
+.card-1-C {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  width: 100%;
+  height: 12  rem;
+  border-radius: 15px;
+  background-color: #422680;
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.card-1-C p{
+  font-size: 14px;
+  color: #6c7aa0; 
+  text-align: right;
+}
+
+.card-1-C section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 45%;
+}
+
+.links-C {
+  font-size: 16px;
+  color: #fff;
+}
+.links-C:hover{
+  color: #000000;
+}
+
+.h3-title-C{
+  display: block;
+  width: 80%;
+  text-align: left;
+  margin: 2rem 0 1rem 0;
+}
+
+.box-C{
+  width: 90%;
+  height: 24.5rem;
+  border-radius: 20px;  
+  color: white;
+  background-color: #422680;
+  box-shadow: 14px -8px 5px #000000;
+  padding: 4px 0 4px 8px;
+  margin-bottom: 40px;
+}
+
+.box-C input{
+  height: 80%;
+}
+
+.card-2-C{
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.card-2-C form, .card-3-C form{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 35px 1fr) 40px;
+  place-items: start start;
+  padding: 15px;
+}
+
+.card-2-C label{
+  grid-row: 1/2;
+  grid-column: 1/2;
+  
+}
+
+#Cadastro input#name {
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+
+.card-2-C img{
+  grid-row: 3/5;
+  height: 70%;   
+  background: #280659;
+  padding: 14px;
+  border-radius: 50px;
+}
+
+.card-2-C .button{
+  grid-row: 5/6;
+}
+
+.button-C{
+  height: 100%;
+  width: 20%;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+  background-color: #131129;
+  color: #fff;
+}
+  
+.button-C:hover{
+  cursor: pointer;
+}
+
+.card-3-C {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.card-3-C form:nth-child(1){
+  grid-row: 1/2;
+}
+.card-3-C input#email{
+  grid-row: 2/3;
+}
+.card-3-C form:nth-child(3){
+  grid-row: 3/4;
+}
+.card-3-C input#passwod{
+  grid-row: 4/5;
+}
+.card-3-C .button{
+  grid-row: 5/6;
+}
+
+.card-4-C {
+  grid-row: 5/6;
+  grid-column: 1/3;
+  width: 100%;
+  height: 35rem;
+  border-radius: 20px;
+  color: white;
+  background-color: #422680;
+  box-shadow: 14px -8px 5px #000000;
+}
+
+.card-4-C form{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 35px 1fr) 45px;
+  place-items: start start;
+  padding: 20px;
+}
+
+.card-4-C input{
+  height: 70%;
+}

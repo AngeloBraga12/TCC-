@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/asid.css">
+</head>
+<body>
+<aside class="active">
+     <img class="side-item menu" id="menu" src="./icons/menu.png"        alt="" >
+         <div class="imgs">  
+            <img class="side-item bid      " src="./icons/bid.png"         alt="" >  
+            <img class="side-item heart    " src="./icons/heart.png"       alt="" >
+            <img class="side-item star     " src="./icons/star.png"        alt="" >
+            <img class="side-item setting  " src="./icons/setting.png"     alt="" >
+        </div>
+        <div class="texts">
+            <p class="letter " > Tarefas</p>
+            <p class="letter " > Favoritos</p>
+            <p class="letter " > Destaques</p>
+            <p class="letter " > Configurações</p>
+        </div>
+</aside>
+<script src="./script/aside.js"></script>
+</body>
+</html>
+
+
+html{
+font-size: 62.5%;
+}
+
+aside{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100rem;
+    width: 8rem;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 5;
+    background-color: white;
+    transition: 0.5s ease-in;
+}
+.imgs{
+    margin: 30vh 2vh;
+    transition: 1s ease;
+}
+.side-item{  
+     display: grid;
+     width: 35px;
+     height: 35px;
+     margin-bottom: 4.2vh;
+}
+.imgs{
+    opacity: 0;
+}
+.texts {
+    display: grid;
+    opacity: 0; 
+    font-size: 25px;
+    margin: -57.5rem 5rem;
+    transition: opacity 0.85s ease-out;
+}
+.letter{
+    margin: 2.5rem;
+}
+
+.side-item:hover {
+    background-color: rgba(55, 45, 103, 0.258);
+    border-radius: 40%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px;
+    transform: scale(1.20);
+    transition: 150ms ease;
+}
+
+aside.activ{
+    width: 28vh;
+}
+
+body.hovered {
+    margin-left: 18rem;
+    transition: 0.5s ease-in;
+    overflow: hidden;
+}
+
+body.transition{
+    transition: 1s ease-out
+}
+
+aside.activ .imgs{
+    opacity: 1;
+}
+
+aside.activ .imgs{
+    transition: 1s ;
+}
+
+#menu{
+    margin: 45rem 1.2rem;
+    width: 50px;
+    height: 50px;  
+    transition: 0.8s ease-out;
+}
+
+aside.activ #menu{
+    margin: 2rem 1.2rem;
+    width: 50px;
+    height: 50px; 
+    transition: 0.8s ease-in-out;
+    animation: kali 1s both;
+}
+
+aside.activ .texts{
+display: grid;
+opacity: 1; 
+transition: 1s ease-in;
+}
+
+aside.activ .letter{
+    margin: 2.5rem;
+}
+
+@keyframes kali {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

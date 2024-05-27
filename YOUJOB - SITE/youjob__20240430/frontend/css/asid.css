@@ -1,0 +1,130 @@
+
+
+html{
+font-size: 62.5%;
+}
+
+aside{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100rem;
+    width: 8rem;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 1;
+    background-color: white;
+    transition: 0.5s ease-in;
+}
+.imgs{
+    margin: 30vh 2vh;
+    transition: 1s ease;
+}
+.side-item{  
+     display: grid;
+     width: 35px;
+     height: 35px;
+     margin-bottom: 4.2vh;
+}
+aside.activ{
+    width: 28vh;
+}
+body.hovered {
+    margin-left: 18rem;
+    transition: 0.5s ease-in;
+    overflow: hidden;
+}
+
+body.transition{
+    transition: 1s ease-out
+}
+
+.imgs{
+    opacity: 0;
+}
+aside.activ .imgs{
+    opacity: 1;
+}
+aside.activ .imgs{
+    transition: 1s ;
+}
+#menu{
+    margin: 45rem 1.2rem;
+    width: 50px;
+    height: 50px;  
+    transition: 0.8s ease-out;
+
+}
+aside.activ #menu{
+    margin: 2rem 1.2rem;
+    width: 50px;
+    height: 50px; 
+    transition: 0.8s ease-in-out;
+    animation: kali 1s both;
+}
+
+.texts {
+    display: grid;
+    opacity: 0; 
+    font-size: 25px;
+    margin: -57.5rem 5rem;
+    transition: opacity 0.85s ease-out;
+}
+
+aside.activ .texts{
+display: grid;
+opacity: 1; 
+transition: 1s ease-in;
+
+}
+
+aside.activ .letter{
+    margin: 2.5rem;
+}
+
+.letter{
+    margin: 2.5rem;
+}
+
+.side-item:hover {
+    background-color: rgba(55, 45, 103, 0.258);
+    border-radius: 40%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px;
+    transform: scale(1.20);
+    transition: 150ms ease;
+}
+  
+@keyframes kali {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@media only screen and (max-width: 574px){
+
+aside{
+   background: white;
+   width: 0;
+}
+#menu{
+
+    margin: 2.5rem 2.5rem;
+}
+body.hovered {
+    margin-left: 0;
+    transition: 0.5s ease-in; 
+    overflow: visible; 
+   
+  }
+  aside.activ{
+    width: 45vh;
+}
+.texts {
+    margin: -50.5rem 5rem;
+}
+aside.active .letter{
+    margin: 2.1 rem;
+}
+
+}
